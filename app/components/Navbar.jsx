@@ -1,11 +1,12 @@
 import React from "react";
+import { FiAlignRight } from "react-icons/fi";
 
 function Navbar() {
   return (
     <>
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50">
         <a href="#top">
-          <h1 className="w-28 cursor-pointer mr-12 font-extrabold text-2xl tracking-wide">
+          <h1 className="w-28 cursor-pointer mr-12 font-extrabold text-4xl tracking-wide">
             SOHAM<span className="text-red-800 text-3xl opacity-80">.</span>
           </h1>
         </a>
@@ -20,13 +21,16 @@ function Navbar() {
             <a href="#resumes">Resume</a>
           </li>
         </ul>
-        <div>
+        <div className="flex items-center">
           <a
             href="#contacts"
-            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-600 rounded-md ml-4"
+            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-800 rounded-md ml-4"
           >
-            Contact Me
+            Get in Touch
           </a>
+          <button className="block md:hidden ml-4">
+            <FiAlignRight className="w-6 h-6" />
+          </button>
         </div>
       </nav>
     </>
