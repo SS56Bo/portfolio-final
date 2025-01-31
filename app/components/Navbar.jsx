@@ -1,8 +1,16 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { FiAlignRight } from "react-icons/fi";
-import { FiArrowUpRight } from "react-icons/fi";
+import {
+  FiArrowUpRight,
+  FiSun,
+  FiAlignRight,
+  FiMoon,
+  FiHome,
+  FiFolder,
+  FiFileText,
+  FiMail,
+} from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
 function Navbar() {
@@ -90,9 +98,10 @@ function Navbar() {
 
         {/* THE GET IN TOUCH BUTTON  */}
         <div className="flex items-center">
+          <FiMoon className="w-6 h-6 text-gray-600 hover:text-blue-500 transition-colors duration-200 cursor-pointer" />
           <a
             href="#contacts"
-            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-800 rounded-md ml-4 hover:bg-blue-500 hover:text-white transition-colors duration-200"
+            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border-2 font-semibold border-blue-500 text-blue-600 rounded-md ml-4 hover:bg-blue-500 hover:text-white transition-colors duration-200"
           >
             Get in Touch
             <FiArrowUpRight />
@@ -105,27 +114,48 @@ function Navbar() {
         {/* Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-blue-500 transition duration-500"
+          className="flex md:hidden flex-col gap-6 py-24 px-12 fixed -right-64 top-0 bottom-0 w-72 z-50 h-screen bg-gradient-to-br from-blue-600 to-blue-400 shadow-lg rounded-l-2xl transition-transform duration-500 ease-in-out"
         >
+          {/* Close Button */}
           <div className="absolute right-6 top-6" onClick={closeMenu}>
-            <FiX className="w-5 h-5 cursor-pointer" />
+            <FiX className="w-6 h-6 text-white cursor-pointer hover:rotate-90 transition-transform duration-300 ease-in-out" />
           </div>
+
+          {/* Menu Items */}
           <li>
-            <a href="#top">Home</a>
-          </li>
-          <li>
-            <a href="#projects" onClick={closeMenu}>
-              Projects
+            <a
+              href="#top"
+              className="text-white text-lg font-semibold tracking-wide flex items-center gap-2 hover:text-gray-200 hover:underline underline-offset-8 transition-all duration-300"
+              onClick={closeMenu}
+            >
+              <FiHome className="w-5 h-5" /> Home
             </a>
           </li>
           <li>
-            <a href="#resumes" onClick={closeMenu}>
-              Resume
+            <a
+              href="#projects"
+              className="text-white text-lg font-semibold tracking-wide flex items-center gap-2 hover:text-gray-200 hover:underline underline-offset-8 transition-all duration-300"
+              onClick={closeMenu}
+            >
+              <FiFolder className="w-5 h-5" /> Projects
             </a>
           </li>
           <li>
-            <a href="#contacts" onClick={closeMenu}>
-              Get in Touch
+            <a
+              href="#resumes"
+              className="text-white text-lg font-semibold tracking-wide flex items-center gap-2 hover:text-gray-200 hover:underline underline-offset-8 transition-all duration-300"
+              onClick={closeMenu}
+            >
+              <FiFileText className="w-5 h-5" /> Resume
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              className="text-white text-lg font-semibold tracking-wide flex items-center gap-2 hover:text-gray-200 hover:underline underline-offset-8 transition-all duration-300"
+              onClick={closeMenu}
+            >
+              <FiMail className="w-5 h-5" /> Get in Touch
             </a>
           </li>
         </ul>

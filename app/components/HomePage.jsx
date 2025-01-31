@@ -11,7 +11,7 @@ function HomePage() {
         <Image
           src={img}
           alt="Optimus Prime"
-          className="w-32 h-32 rounded-full"
+          className="w-40 h-36 rounded-full"
         />
       </div>
 
