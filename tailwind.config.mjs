@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,8 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        darkHover: "#001759",
+        darkTheme: "#001246",
+        lightHover: "#eff3ff",
       },
     },
   },
