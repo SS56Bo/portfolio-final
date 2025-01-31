@@ -23,7 +23,7 @@ function Navbar() {
         <div>
           <a
             href="#contacts"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-600 rounded-full ml-4"
+            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-600 rounded-md ml-4"
           >
             Contact Me
           </a>
