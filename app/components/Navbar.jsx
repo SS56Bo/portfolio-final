@@ -40,7 +40,7 @@ function Navbar() {
             >
               Home
               <span
-                className={`absolute bottom-0 left-0 w-full h-0.5  bg-blue-800 scale-x-0 ${
+                className={`absolute bottom-0 left-0 w-full h-0.5  bg-blue-500 scale-x-0 ${
                   activeLink === "top"
                     ? "scale-x-100"
                     : "group-hover:scale-x-100"
@@ -59,7 +59,7 @@ function Navbar() {
             >
               Projects
               <span
-                className={`absolute bottom-0 left-0 w-full h-0.5  bg-blue-800 scale-x-0 ${
+                className={`absolute bottom-0 left-0 w-full h-0.5  bg-blue-500 scale-x-0 ${
                   activeLink === "projects"
                     ? "scale-x-100"
                     : "group-hover:scale-x-100"
@@ -78,7 +78,7 @@ function Navbar() {
             >
               Resume
               <span
-                className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-800 scale-x-0 ${
+                className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 scale-x-0 ${
                   activeLink === "resume"
                     ? "scale-x-100"
                     : "group-hover:scale-x-100"
@@ -92,7 +92,7 @@ function Navbar() {
         <div className="flex items-center">
           <a
             href="#contacts"
-            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-800 rounded-md ml-4 hover:bg-black hover:text-white transition-colors duration-200"
+            className="hidden lg:flex items-center gap-3 px-5 py-2.5 border border-gray-800 rounded-md ml-4 hover:bg-blue-500 hover:text-white transition-colors duration-200"
           >
             Get in Touch
             <FiArrowUpRight />
@@ -105,7 +105,7 @@ function Navbar() {
         {/* Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-blue-800 transition duration-500"
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-blue-500 transition duration-500"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <FiX className="w-5 h-5 cursor-pointer" />
