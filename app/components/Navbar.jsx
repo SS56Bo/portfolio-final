@@ -1,7 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import { FiAlignRight } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 function Navbar() {
+  const sideMenuRef = useRef();
+
+  const openMenu = () => {
+    sideMenuRef.current.style.transform = "translateX(-16rem)";
+  };
+
+  const closeMenu = () => {
+    sideMenuRef.current.style.transform = "translateX(16rem)";
+  };
+
   return (
     <>
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50">
@@ -28,10 +41,38 @@ function Navbar() {
           >
             Get in Touch
           </a>
-          <button className="block md:hidden ml-4">
+          <button className="block md:hidden ml-4" onClick={openMenu}>
             <FiAlignRight className="w-6 h-6" />
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        <ul
+          ref={sideMenuRef}
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-blue-800 transition duration-500"
+        >
+          <div className="absolute right-6 top-6" onClick={closeMenu}>
+            <FiX className="w-5 h-5 cursor-pointer" />
+          </div>
+          <li>
+            <a href="#top">Home</a>
+          </li>
+          <li>
+            <a href="#projects" onClick={closeMenu}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#resumes" onClick={closeMenu}>
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" onClick={closeMenu}>
+              Get in Touch
+            </a>
+          </li>
+        </ul>
       </nav>
     </>
   );
