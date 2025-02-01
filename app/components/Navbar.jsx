@@ -41,7 +41,7 @@ function Navbar() {
           <li>
             <a
               href="#top"
-              className={`text-gray-800 font-semibold transition-all duration-300 ease-in-out relative group ${
+              className={`text-gray-800 font-semibold  hover:text-blue-600 transition-all duration-300 ease-in-out relative group ${
                 activeLink === "top" ? "text-black" : ""
               }`}
               onClick={() => handleClick("top")}
@@ -60,7 +60,7 @@ function Navbar() {
           <li>
             <a
               href="#projects"
-              className={`text-gray-800 font-semibold transition-all duration-300 ease-in-out relative group ${
+              className={`text-gray-800 font-semibold transition-all hover:text-blue-600 duration-300 ease-in-out relative group ${
                 activeLink === "projects" ? "text-black" : ""
               }`}
               onClick={() => handleClick("projects")}
@@ -79,7 +79,7 @@ function Navbar() {
           <li>
             <a
               href="#resume"
-              className={`text-gray-800 font-semibold transition-all duration-300 ease-in-out relative group ${
+              className={`text-gray-800 font-semibold  hover:text-blue-600 transition-all duration-300 ease-in-out relative group ${
                 activeLink === "resume" ? "text-black" : ""
               }`}
               onClick={() => handleClick("resume")}
