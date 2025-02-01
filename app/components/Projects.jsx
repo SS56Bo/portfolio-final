@@ -7,19 +7,19 @@ function Projects() {
   const [activeTab, setActiveTab] = useState("Web Dev");
 
   return (
-    <div id="projects" className="w-full px-[12%] py-16 scroll-mt-20">
+    <div id="projects" className="w-full px-6 md:px-[12%] py-16 scroll-mt-20">
       {/* Section Title */}
-      <h1 className="text-4xl font-bold text-center text-gray-900 mb-6">
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">
         My Projects
       </h1>
 
       {/* Tab System */}
-      <div className="flex justify-center space-x-6 border-b-2 border-gray-300 pb-4 mb-6">
+      <div className="flex justify-center overflow-x-auto md:justify-center space-x-4 md:space-x-6 border-b-2 border-gray-300 pb-4 mb-6 no-scrollbar">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveTab(category)}
-            className={`relative text-lg font-medium text-gray-700 px-4 py-2 transition-colors duration-300 
+            className={`relative whitespace-nowrap text-base md:text-lg font-medium text-gray-700 px-3 md:px-4 py-2 transition-colors duration-300 
               ${
                 activeTab === category
                   ? "text-blue-600 font-semibold"
@@ -41,6 +41,10 @@ function Projects() {
           Showing projects for:{" "}
           <span className="font-semibold text-blue-600">{activeTab}</span>
         </h4>
+        <p className="mt-2 text-gray-500 text-sm md:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          minus!
+        </p>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ function Navbar() {
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50">
         <a href="#top">
           <h1 className="w-28 cursor-pointer mr-12 font-extrabold text-4xl tracking-wide">
-            SOHAM<span className="text-red-800 text-3xl opacity-80">.</span>
+            SOHAM<span className="text-blue-600 text-3xl opacity-80">.</span>
           </h1>
         </a>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
