@@ -31,7 +31,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50">
+      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50 backdrop-blur-lg rounded-lg">
+        {/* FOR SOHAM LOGO */}
         <a href="#top">
           <h1 className="w-28 cursor-pointer mr-12 font-extrabold text-4xl tracking-wide">
             SOHAM<span className="text-blue-600 text-3xl opacity-80">.</span>
