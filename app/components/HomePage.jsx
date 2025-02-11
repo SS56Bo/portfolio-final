@@ -27,8 +27,9 @@ function HomePage() {
 
       {/* Description */}
       <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600 font-Ovo">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quo,
-        ducimus vero cum fuga magni?
+        Explore my work—past projects, current builds, and everything in
+        between! Always open to ideas and connections. Let’s create something
+        great!
       </p>
 
       {/* Buttons Section */}
