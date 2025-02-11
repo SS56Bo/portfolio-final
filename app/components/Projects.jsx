@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Card from "./Card";
 
 const categories = ["Web Dev", "Web3", "ML & LLMs", "Games", "Others"];
 
@@ -38,13 +39,10 @@ function Projects() {
       {/* Tab Content */}
       <div className="text-center text-gray-700">
         <h4 className="text-lg">
-          Showing projects for:{" "}
+          Showing projects for:
           <span className="font-semibold text-blue-600">{activeTab}</span>
+          <Card />
         </h4>
-        <p className="mt-2 text-gray-500 text-sm md:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          minus!
-        </p>
       </div>
     </div>
   );
