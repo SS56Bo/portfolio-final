@@ -27,9 +27,9 @@ function Resume() {
         duration: "October 2021 - June 2025",
       },
       {
-        title: "Higher Secondary Certificate",
+        title: "XII Board",
         institution: "Central Board of Secondary Education",
-        duration: "April 2019 - June 2021",
+        duration: "April 2019 - July 2021",
       },
     ],
     Certifications: [
@@ -73,10 +73,10 @@ function Resume() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex items-center justify-center gap-2 px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg font-semibold border-2 rounded-lg transition whitespace-nowrap ${
+              className={`flex items-center justify-center gap-2 px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg font-semibold border-2 rounded-lg shadow-lg transition whitespace-nowrap ${
                 activeTab === tab
-                  ? "bg-blue-500 text-white border-blue-500"
-                  : "text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white"
+                  ? "bg-blue-600 text-white border-blue-700"
+                  : "text-blue-600 border-blue-600 hover:bg-blue-700 hover:text-white"
               }`}
             >
               {tab}
