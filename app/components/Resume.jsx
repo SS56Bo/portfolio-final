@@ -26,6 +26,11 @@ function Resume() {
         institution: "Academy of Technology",
         duration: "October 2021 - June 2025",
       },
+      {
+        title: "Higher Secondary Certificate",
+        institution: "Central Board of Secondary Education",
+        duration: "April 2019 - June 2021",
+      },
     ],
     Certifications: [
       {
@@ -80,7 +85,7 @@ function Resume() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 p-4 md:p-6 text-left">
+        <div className="flex-1 p-4 md:p-6 text-left max-h-[280px] overflow-y-auto">
           <h2 className="text-xl md:text-2xl font-bold mb-4">{activeTab}</h2>
           {activeTab === "Skills" ? (
             <div className="flex flex-wrap gap-4">
