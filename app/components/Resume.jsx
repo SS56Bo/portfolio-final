@@ -51,7 +51,10 @@ function Resume() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div
+      id="resumes"
+      className="flex flex-col items-center justify-center min-h-screen p-4"
+    >
       {/* Resume Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">
         Resume
