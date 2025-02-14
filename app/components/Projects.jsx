@@ -23,11 +23,11 @@ function Projects() {
           <button
             key={category}
             onClick={() => setActiveTab(category)}
-            className={`relative text-sm sm:text-base md:text-lg font-medium text-gray-700 px-3 py-2 rounded-md transition-colors duration-300 
+            className={`relative text-sm sm:text-base md:text-lg font-medium text-gray-700 px-4 py-2 rounded-lg transition-all duration-300 shadow-md 
               ${
                 activeTab === category
-                  ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                  : "hover:text-blue-500"
+                  ? "bg-blue-600 text-white font-semibold shadow-lg"
+                  : "bg-gray-200 hover:bg-gray-300"
               }`}
           >
             {category}

@@ -1,24 +1,42 @@
 import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiGithub } from "react-icons/fi";
 
-function Card({ title, description, gLink, websiteLink }) {
+function Card({ title, description, gLink, websiteLink, src }) {
   return (
-    <div>
-      <div class="p-10">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <img class="w-full" src="/mountain.jpg" alt="Mountain" />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{title}</div>
-            <p class="text-gray-700 text-base">{description}</p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <button>Github</button>
-            </span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <button>Website</button>
-            </span>
-          </div>
+    <div className="p-4">
+      <div className="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+        {/* Image */}
+        <img className="w-full h-48 object-cover" src={src} alt="Project" />
+
+        {/* Content */}
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+          <p className="text-gray-700 text-sm">{description}</p>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex justify-between px-6 pb-4">
+          {gLink && (
+            <a
+              href={gLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-gray-900"
+            >
+              <FiGithub />
+              GitHub <FiArrowUpRight />
+            </a>
+          )}
+          {websiteLink && (
+            <a
+              href={websiteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-blue-700"
+            >
+              Website <FiArrowUpRight />
+            </a>
+          )}
         </div>
       </div>
     </div>
