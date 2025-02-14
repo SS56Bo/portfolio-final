@@ -115,7 +115,7 @@ function Navbar() {
         {/* Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-6 py-24 px-12 fixed -right-64 top-0 bottom-0 w-72 z-50 h-screen bg-gradient-to-br from-blue-600 to-blue-400 shadow-lg rounded-l-2xl transition-transform duration-500 ease-in-out"
+          className="flex md:hidden flex-col gap-6 py-24 px-10 fixed -right-64 top-0 bottom-0 w-72 z-50 h-screen bg-gradient-to-br from-blue-600 to-blue-400 shadow-lg rounded-l-2xl transition-transform duration-500 ease-in-out"
         >
           {/* Close Button */}
           <div className="absolute right-6 top-6" onClick={closeMenu}>
