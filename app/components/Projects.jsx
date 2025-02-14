@@ -37,13 +37,7 @@ function Projects() {
       </div>
 
       {/* Tab Content */}
-      <div className="text-center text-gray-700">
-        <h4 className="text-lg">
-          Showing projects for:
-          <span className="font-semibold text-blue-600">{activeTab}</span>
-          <Card />
-        </h4>
-      </div>
+      <div className="text-center text-gray-700"></div>
     </div>
   );
 }

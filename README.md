@@ -7,4 +7,4 @@ Components List:
 3. Project Page ✅
 4. Resume Page ✅
 
-Note: Might need to add a frosted glass effect to the Navbar, or anything, that makes it more grounded.
+Website Link: https://shadow-final-aadvark.vercel.app/
