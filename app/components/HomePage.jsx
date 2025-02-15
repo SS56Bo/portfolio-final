@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiDownload } from "react-icons/fi";
-import img from "./../../assets/img/optimus.jpg";
+import img from "./../assets/img/optimus.jpg";
 
 function HomePage() {
   return (

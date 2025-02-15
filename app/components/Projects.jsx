@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Card from "./Card";
-import img from "./../../assets/project/wallet.png";
+import Image from "next/image";
 
 const categories = ["Web Dev", "Web3", "ML & LLMs", "Games", "Others"];
 
@@ -11,7 +11,7 @@ const projects = [
     description:
       "A digital wallet accessible through a web browser, enabling users to securely store, send, and receive cryptocurrencies or digital assets.",
     gLink: "https://github.com/SS56Bo/web3-wallet",
-    src: img,
+    src: "/wallet.jpg",
     status: "Finished",
     category: "Web3",
   },

@@ -8,6 +8,9 @@ import {
 } from "react-icons/fi";
 
 function Card({ title, description, gLink, websiteLink, src, status }) {
+  // Normalize status to lowercase for matching
+  const normalizedStatus = status ? status.toLowerCase() : "unknown";
+
   // Status color mapping
   const statusMap = {
     ongoing: { color: "bg-red-500", label: "Ongoing", icon: <FiXCircle /> },
@@ -20,7 +23,7 @@ function Card({ title, description, gLink, websiteLink, src, status }) {
     unknown: { color: "bg-gray-500", label: "Unknown", icon: <FiClock /> },
   };
 
-  const currentStatus = statusMap[status] || statusMap.unknown;
+  const currentStatus = statusMap[normalizedStatus] || statusMap.unknown;
 
   return (
     <div className="p-4">
@@ -33,7 +36,7 @@ function Card({ title, description, gLink, websiteLink, src, status }) {
           <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
           <p className="text-gray-700 text-sm mb-4">{description}</p>
 
-          {/* Status Badge */}
+          {/* Status Badge (Fix applied) */}
           <div
             className={`inline-flex items-center gap-2 text-white px-3 py-1 rounded-full text-xs font-semibold ${currentStatus.color}`}
           >
