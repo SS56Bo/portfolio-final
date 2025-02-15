@@ -15,6 +15,14 @@ const projects = [
     status: "Finished",
     category: "Web3",
   },
+  {
+    title: "2D Platformer",
+    description: "A 2D Platformer made using Brackey's assets",
+    gLink: "https://github.com/SS56Bo/Godot-Tutorial",
+    src: "/gameA.png",
+    status: "Ongoing",
+    category: "Games",
+  },
 ];
 
 function Projects() {
@@ -53,7 +61,7 @@ function Projects() {
       </div>
 
       {/* Tab Content */}
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-4">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (
             <Card key={index} {...project} />
