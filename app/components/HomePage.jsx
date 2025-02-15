@@ -5,7 +5,10 @@ import img from "./../../assets/img/optimus.jpg";
 
 function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen pt-6 text-center">
+    <div
+      id="home"
+      className="flex flex-col items-center justify-center min-h-screen pt-6 text-center"
+    >
       {/* Image Section */}
       <div className="mb-2">
         <Image

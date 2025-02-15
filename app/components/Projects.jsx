@@ -1,11 +1,28 @@
 "use client";
 import React, { useState } from "react";
 import Card from "./Card";
+import img from "./../../assets/project/wallet.png";
 
 const categories = ["Web Dev", "Web3", "ML & LLMs", "Games", "Others"];
 
+const projects = [
+  {
+    title: "Web Based Wallet",
+    description:
+      "A digital wallet accessible through a web browser, enabling users to securely store, send, and receive cryptocurrencies or digital assets.",
+    gLink: "https://github.com/SS56Bo/web3-wallet",
+    src: img,
+    status: "Finished",
+    category: "Web3",
+  },
+];
+
 function Projects() {
   const [activeTab, setActiveTab] = useState("Web Dev");
+
+  const filteredProjects = projects.filter(
+    (project) => project.category === activeTab
+  );
 
   return (
     <div
@@ -36,7 +53,17 @@ function Projects() {
       </div>
 
       {/* Tab Content */}
-      <div className="text-center text-gray-700"></div>
+      <div className="flex flex-wrap justify-center gap-6">
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, index) => (
+            <Card key={index} {...project} />
+          ))
+        ) : (
+          <p className="text-gray-500 text-lg">
+            No projects found in this category.
+          </p>
+        )}
+      </div>
     </div>
   );
 }

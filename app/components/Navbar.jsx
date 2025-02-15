@@ -33,7 +33,7 @@ function Navbar() {
     <>
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50 backdrop-blur-lg rounded-lg">
         {/* FOR SOHAM LOGO */}
-        <a href="/">
+        <a href="#home">
           <h1 className="w-28 cursor-pointer mr-12 font-extrabold text-4xl tracking-wide">
             SOHAM<span className="text-blue-600 text-3xl opacity-80">.</span>
           </h1>
@@ -41,7 +41,7 @@ function Navbar() {
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3">
           <li>
             <a
-              href="/"
+              href="#home"
               className={`text-gray-800 font-semibold  hover:text-blue-600 transition-all duration-300 ease-in-out relative group ${
                 activeLink === "top" ? "text-black" : ""
               }`}
@@ -125,7 +125,7 @@ function Navbar() {
           {/* Menu Items */}
           <li>
             <a
-              href="/"
+              href="#home"
               className="text-white text-lg font-semibold tracking-wide flex items-center gap-2 hover:text-gray-200 hover:underline underline-offset-8 transition-all duration-300"
               onClick={closeMenu}
             >
