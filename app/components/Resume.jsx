@@ -36,7 +36,12 @@ function Resume() {
       {
         title: "Machine Learning Specialization",
         institute: "Coursera",
-        duration: "August 2025 - November 2025",
+        duration: "August 2024 - November 2024",
+      },
+      {
+        title: "Rust Programming Specialization",
+        institute: "Coursera",
+        duration: "February 2025 - Ongoing",
       },
     ],
     Skills: [
