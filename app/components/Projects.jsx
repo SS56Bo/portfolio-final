@@ -23,6 +23,15 @@ const projects = [
     status: "Ongoing",
     category: "Games",
   },
+  {
+    title: "NoteFlow",
+    description:
+      "A web-based note taking app, can be navigated via keybindings.",
+    gLink: "https://github.com/SS56Bo",
+    src: "/noteflow.jpg",
+    status: "Ongoing",
+    category: "Web Dev",
+  },
 ];
 
 function Projects() {
